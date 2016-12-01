@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.christophercorbett.politicalquiz.MainActivity">
+
+    <TextView android:id="@+id/app_title"
+        android:text="@string/app_name"
+        android:textColor="@color/colorPrimary"
+        android:textSize="25sp"
+        android:fontFamily="monospace"
+        android:layout_centerHorizontal="true"
+        android:paddingTop="100dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView android:id="@+id/subtitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:paddingTop="135dp"
+        android:textSize="25sp"
+        android:fontFamily="serif-monospace"
+        android:text="@string/subtitle"/>
+
+    <Button android:id="@+id/start_quiz_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/get_started"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="175dp"
+        android:onClick="politicalGraph"/>
+
+    <Button android:id="@+id/past_quizzes_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/past_quizzes"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="225dp"
+        android:onClick="showHistory"/>
+
+
+
+</RelativeLayout>

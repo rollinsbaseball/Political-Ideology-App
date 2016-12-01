@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView android:id="@+id/question"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="Question"
+        />
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RadioButton android:id="@+id/answer1"
+            android:text="@string/sagree"
+            android:textColor="#39add1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:textSize="15sp"
+            android:onClick="" />
+
+        <RadioButton android:id="@+id/answer2"
+            android:text="@string/agree"
+            android:textColor="#39add1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:textSize="15sp"
+            android:onClick="" />
+
+        <RadioButton android:id="@+id/answer3"
+            android:text="@string/neutral"
+            android:textColor="#39add1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:textSize="15sp"
+            android:onClick="" />
+
+        <RadioButton android:id="@+id/answer4"
+            android:text="@string/disagree"
+            android:textColor="#39add1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:textSize="15sp"
+            android:onClick="" />
+
+        <RadioButton android:id="@+id/answer5"
+            android:text="@string/sdisagree"
+            android:textColor="#39add1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:textSize="15sp"
+            android:onClick="" />
+
+    </RadioGroup>
+
+</LinearLayout>
