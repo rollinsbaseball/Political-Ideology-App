@@ -15,7 +15,8 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:text="Question"
-        />
+        android:layout_alignBottom="@+id/graph"
+        android:layout_alignParentStart="true" />
 
     <RadioGroup
         android:layout_width="wrap_content"
@@ -23,61 +24,16 @@
         android:layout_below="@id/question"
         android:orientation="vertical">
 
-        <RadioButton android:id="@+id/answer1"
-            android:text="@string/sagree"
-            android:textColor="#39add1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:checked="true"
-            android:textSize="15sp"
-            android:onClick="" />
-
-        <RadioButton android:id="@+id/answer2"
-            android:text="@string/agree"
-            android:textColor="#39add1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:checked="true"
-            android:textSize="15sp"
-            android:onClick="" />
-
-        <RadioButton android:id="@+id/answer3"
-            android:text="@string/neutral"
-            android:textColor="#39add1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:checked="true"
-            android:textSize="15sp"
-            android:onClick="" />
-
-        <RadioButton android:id="@+id/answer4"
-            android:text="@string/disagree"
-            android:textColor="#39add1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:checked="true"
-            android:textSize="15sp"
-            android:onClick="" />
-
-        <RadioButton android:id="@+id/answer5"
-            android:text="@string/sdisagree"
-            android:textColor="#39add1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:checked="true"
-            android:textSize="15sp"
-            android:onClick="" />
-
     </RadioGroup>
 
     <com.jjoe64.graphview.GraphView
         android:layout_width="350dp"
-        android:layout_height="250dp"
+        android:layout_height="200dp"
         android:id="@+id/graph"
 
         android:layout_alignParentBottom="true"
         android:layout_marginBottom="19dp"
-        
+
         />
 
     <TextView android:id="@+id/auth_label"
@@ -94,20 +50,82 @@
         android:layout_alignParentBottom="true"
         android:text="@string/lib"/>
 
-    <TextView android:id="@+id/com_label"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_toStartOf="@id/graph"
-
-        android:text="@string/com"/>
-
     <TextView android:id="@+id/con_label"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_toEndOf="@id/graph"
-        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/com_label"
+        android:layout_marginTop="275dp"
         android:text="@string/con"
         />
+
+    <RadioButton android:id="@+id/answer5"
+        android:text="@string/sdisagree"
+        android:textColor="#39add1"
+        android:layout_width="wrap_content"
+        android:layout_height="21dp"
+        android:checked="true"
+        android:textSize="15sp"
+        android:onClick=""
+        android:layout_alignBottom="@+id/auth_label"
+        android:layout_toEndOf="@+id/com_label"
+        android:layout_marginBottom="27dp" />
+
+
+
+    <RadioButton android:id="@+id/answer1"
+        android:text="@string/sagree"
+        android:textColor="#39add1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:checked="true"
+        android:textSize="15sp"
+        android:onClick=""
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="38dp" />
+
+    <RadioButton android:id="@+id/answer2"
+        android:text="@string/agree"
+        android:textColor="#39add1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:checked="true"
+        android:textSize="15sp"
+        android:onClick=""
+        android:layout_below="@+id/answer1"
+        android:layout_alignEnd="@+id/radioGroup" />
+
+    <RadioButton android:id="@+id/answer4"
+        android:text="@string/disagree"
+        android:textColor="#39add1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:checked="true"
+        android:textSize="15sp"
+        android:onClick=""
+        android:layout_alignBaseline="@+id/con_label"
+        android:layout_alignBottom="@+id/con_label"
+        android:layout_alignEnd="@+id/radioGroup" />
+
+    <RadioButton android:id="@+id/answer3"
+        android:text="@string/neutral"
+        android:textColor="#39add1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:checked="true"
+        android:textSize="15sp"
+        android:onClick=""
+        android:layout_above="@+id/con_label"
+        android:layout_alignEnd="@+id/answer4"
+        android:layout_below="@+id/answer2" />
+
+    <TextView android:id="@+id/com_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/com"
+        android:layout_alignBottom="@+id/graph"
+        android:layout_alignEnd="@+id/radioGroup"
+        android:layout_marginBottom="21dp" />
 
 
 
