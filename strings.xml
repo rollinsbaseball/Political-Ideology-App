@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name">PoliticalQuiz</string>
+    <string name="subtitle">Where do you lie?</string>
+    <string name="get_started">Get started</string>
+    <string name="past_quizzes">Past Quizzes</string>
+
+    <string name="graph_title">Where do you lie?</string>
+    <string name="lib">Libertarian</string>
+    <string name="con">C\no\nn\ns\ne\nr\nv\na\nt\ni\nv\ne</string>
+    <string name="com">C\no\nm\nm\nu\nn\ni\ns\nt</string>
+    <string name="auth">Authoritarian</string>
+
+    <string name="name">Name</string>
+    <string name="enter_a_name">Enter a name</string>
+    <string name="political_stance">Political Stance</string>
+    <string name="enter_a_stance">Enter a stance</string>
+    <string name="go">Show People</string>
+    <string name="all_people">View All People</string>
+
+    <string name="sagree">Strongly Agree</string>
+    <string name="agree">Agree</string>
+    <string name="neutral">Neutral</string>
+    <string name="disagree">Disagree</string>
+    <string name="sdisagree">Strongly Disagree</string>
+
+    <string name="go_home">Back to Home</string>
+    <string name="go_to_database">Go to Database</string>
+    <string name="warning">Are you sure you want to go back?\n
+    Note: you may lose all quiz\n
+        progress until this point!</string>
+    <string name="warning2">Are you sure you want to continue?\n
+    Note: you may lose all quiz\n
+        progress until this point!</string>
+    <string name="back">Continue</string>
+    <string name="cancel">Cancel</string>
+
+</resources>

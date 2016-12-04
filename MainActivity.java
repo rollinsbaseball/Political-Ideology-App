@@ -1,7 +1,12 @@
 package com.example.christophercorbett.politicalquiz;
 
+import android.app.Dialog;
+import android.content.Context;
+import android.support.v4.app.DialogFragment;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.provider.ContactsContract;
+import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -89,5 +94,39 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.quiz_database);
         //startActivity( new Intent (getApplicationContext(), QuizHistory.class));
     }
+
+
+    public boolean onCreateOptionsMenu( Menu menu ) {
+        getMenuInflater( ).inflate(R.menu.main_menu, menu );
+        return true;
+    }
+
+
+    public boolean onOptionsItemSelected( MenuItem item) {
+        switch ( item.getItemId( )) {
+            case R.id.homepage:
+                AlertDialog.Builder builder;
+                builder = new AlertDialog.Builder(MainActivity.this);
+                builder.setMessage(R.string.warning).setTitle(R.string.go_home);
+                builder.setPositiveButton(R.string.back,
+                        new DialogInterface.OnClickListener() {
+                            public void onClick(DialogInterface dialog, int id) {
+                                setContentView(R.layout.activity_main);
+                            }
+                        });
+                builder.setNegativeButton(R.string.cancel,
+                        new DialogInterface.OnClickListener() {
+                            public void onClick(DialogInterface dialog, int id) {
+
+                            }
+                        });
+                builder.show();
+                return true;
+
+            default:
+                return super.onOptionsItemSelected(item);
+        }
+    }
+
 
 }
